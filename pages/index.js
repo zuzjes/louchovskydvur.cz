@@ -49,7 +49,7 @@ export default () => {
     <>
       <GlobalStyle />
       <Head>
-        <title>Zuzka Jeschke - zuzjes.com</title>
+        <title>louchovsky dvur</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
@@ -57,45 +57,12 @@ export default () => {
         />
       </Head>
       <Container>
-        <Header>Zuzka Jeschke</Header>
-        <p>
-          Jsem velký nadšenec do hor, lezení,{" "}
-          <A href="https://www.instagram.com/jsemnela/">Nely</A> (muj pes) a
-          svých <A href="https://www.instagram.com/zuz_kytky/">kytek</A>.
-        </p>
-        <p>
-          Věnuji se <b>frontendu</b>, jednou chci být hustá programátorka. Proto
-          se teď snažím do sebe nasát co nejvíce znalostí a zkušeností. Baví mě
-          dělat věci efektivně a smysluplně. I když jsem trochu introvert, po
-          osmělení se umím bavit, práce v týmu je moje věc!
-        </p>
-        <Technologies>
-          React, Next.js, JS, Now, Git, Gitlab, Bootstrap, Material-UI, Formik,
-          Styled&nbsp;Components
-        </Technologies>
-        <p>
-          <A href="tel:+420608540464">+420 608 540 464</A> (
-          <A href="https://t.me/zuzjes">Telegram</A>)
-          <br />
-          <A href="mailto:zuz@zuzjes.com">zuz@zuzjes.com</A>
-          <br />
-          <A href="https://zuzj.es/">zuzj.es</A> (rozcestník)
-          <br />
-          <A href="/resume.pdf">CV</A>
-        </p>
-        <p className="row">
-          <Button href="https://github.com/zuzjes">Github</Button>
-          <Button href="https://www.linkedin.com/in/zuzjes/">Linkedin</Button>
-          <Button href="https://twitter.com/zuzjes">Twitter</Button>
-          <Button href="https://www.instagram.com/zuzjes/">Instagram</Button>
-          <Button href="https://www.facebook.com/zuzka.jeschke">
-            Facebook
-          </Button>
-        </p>
+        <Header>Louchovsky dvur</Header>
+        
       </Container>
 
-      <Gauges gauges_site_id="5c4c99e1e2780409622de4ab" />
-      <GoogleAnalytics google_analytics_site_id="UA-133283927-1" />
+      <Gauges gauges_site_id="xx" />
+      <GoogleAnalytics google_analytics_site_id="xx" />
     </>
   );
 };
