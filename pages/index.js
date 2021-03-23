@@ -1,5 +1,4 @@
 import React from "react"
-import Head from "next/head";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import styled, { createGlobalStyle } from "styled-components";
@@ -12,12 +11,7 @@ import Louchov2 from "../assets/louchov2.jpeg";
 import Louchov3 from "../assets/louchov3.png";
 import Louchov4 from "../assets/louchov4.jpeg";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    /* font-size: 1em; */
-    /* font-family: "Work Sans", sans-serif; */
-  }
-`;
+
 const A = styled.a`
   color: #D24423;
   cursor: pointer;
@@ -43,7 +37,7 @@ const Header = styled.h1`
 const SectionHeader = styled.h3`
   font-size: 3em;
   color: #D24423;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 `;
 
 const Section = styled.div`
@@ -60,6 +54,7 @@ const DarkGreenBackground = styled.div`
   background-color: #004133;
   padding: 3em;
 `;
+
 const GreenHeader = styled.h3`
   color: #A0D2B1;
 `;
@@ -104,28 +99,12 @@ const TextSection = props => (
       <SectionText>
         {props.children}
       </SectionText>
-      <ButtonRedBorder href="mailto:">chci masoooo</ButtonRedBorder>
+      <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
     </Container>
   </Section>
 )
 export default () => (
   <>
-    <GlobalStyle />
-    <Head>
-      <title>Louchovský dvůr</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      {/* <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
-        rel="stylesheet"
-      /> */}
-      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
-    </Head>
-    <Navbar className="pt-3 pb-3">
-      <A href="/">Louchovský dvůr</A>
-      <Nav className="ml-auto">
-        <A href="#contact">Kontakt</A>
-      </Nav>
-    </Navbar>
     <RedBackground>
       <Container className="text-center pb-5" >
         <LouchovImg src={LouchovLogo} />
@@ -133,7 +112,7 @@ export default () => (
         <ButtonWhiteBorder href="mailto:">chci masooo</ButtonWhiteBorder>
       </Container>
     </RedBackground>
-    <Row>
+    <Row noGutters>
       <Col md={6}>
         <Image src={Louchov1} fluid />
       </Col>
@@ -145,15 +124,15 @@ export default () => (
         </TextSection>
       </Col>
     </Row>
-    <Row>
-      <Col md={6} className="text-right">
+    <Row noGutters>
+      <Col md={6} sm={12} className="text-sm-left text-md-right" noGutters>
         <TextSection header="Kde je kráva krávou" >
           Věříme, že naše krávy jsou vybaveny vším co potřebují k tomu, aby byly úspěšnými krávami. Snažíme se jim život komplikovat co nejméně.<br /><br />
           Základem našeho stáda jsou huňaté krávy Salers z francouzské Normandie a Cantalu. Jsou známy pro své mateřské pudy a ostré rohy, ideální kombinací do vlčí oblasti v horách.<br /><br />
           Šlechtění bezrohých zvířat nepodporujeme. Ulehčuje sice práci člověku, ale zbavuje dobytek jeho přirozenosti a bere mu jeho základní sebeobranný nástroj.
         </TextSection>
       </Col>
-      <Col md={6}>
+      <Col md={6} sm={12} noGutters>
         <Image src={Louchov2} fluid />
       </Col>
     </Row>
@@ -166,11 +145,11 @@ export default () => (
         </GreenText>
       </Container>
     </DarkGreenBackground>
-    <Row>
-      <Col md={6}>
+    <Row noGutters>
+      <Col md={6} sm={12}>
         <Image src={Louchov3} fluid />
       </Col>
-      <Col md={6}>
+      <Col md={6} sm={12}>
         <TextSection header="Návrat vlků do Krušných hor">
           Neboj se vlka nic. Ikdyž je za humny, doslova.<br /><br />
           Výskyt vlků na hranici Louchovského dvora se potvrdil dva týdny po převzetí hospodářstí. Každé jaro páchá zvěř na našich pastvinách ohromné škody. Pokud budou vlci likvidovat přemnoženou zvěř, budeme spolu vycházet.<br /><br />
@@ -178,8 +157,8 @@ export default () => (
         </TextSection>
       </Col>
     </Row>
-    <Row>
-      <Col md={6} className="text-right">
+    <Row noGutters>
+      <Col md={6} sm={12} className="text-sm-left text-md-right">
         <TextSection header="Udržitelnost" >
           Sedláci odjakživa tvořili základ ekonomického a společenského života ve svých obcích.<br /><br />
           Zvláště v Sudetech se tento přesah vytrácí a z půdy se často stává prostředek pro čerpání dotací.<br /><br />
@@ -187,10 +166,11 @@ export default () => (
           Proti těmto praktikách – zatím neúspěšně – bojujeme.
         </TextSection>
       </Col>
-      <Col md={6}>
+      <Col md={6} sm={12}>
         <Image src={Louchov4} fluid />
       </Col>
     </Row>
+
     <Gauges gauges_site_id="xx" />
     <GoogleAnalytics google_analytics_site_id="xx" />
   </>
