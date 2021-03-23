@@ -2,6 +2,8 @@ import Head from "next/head";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import styled, { createGlobalStyle } from "styled-components";
+import { Nav, Navbar } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,25 +24,34 @@ const Header = styled.h1`
 `;
 
 
-export default () => {
-  return (
-    <>
-      <GlobalStyle />
-      <Head>
-        <title>louchovsky dvur</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-      <Container>
-        <Header>Louchovsky dvur</Header>
-        
-      </Container>
+export default () => (
+  <>
+    <GlobalStyle />
+    <Head>
+      <title>louchovsky dvur</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+        rel="stylesheet"
+      />
+    </Head>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">Louchov</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#link">Link</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+    <Container>
 
-      <Gauges gauges_site_id="xx" />
-      <GoogleAnalytics google_analytics_site_id="xx" />
-    </>
-  );
-};
+      <Header>Louchovsky dvur</Header>
+
+    </Container>
+
+    <Gauges gauges_site_id="xx" />
+    <GoogleAnalytics google_analytics_site_id="xx" />
+  </>
+);
