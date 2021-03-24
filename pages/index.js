@@ -37,11 +37,11 @@ const Header = styled.h1`
 const SectionHeader = styled.h3`
   font-size: 3em;
   color: #D24423;
-  padding-bottom: 0.5em;
+  /* padding-bottom: 0.5em; */
 `;
 
 const Section = styled.div`
-  padding-top: 7em;
+  /* padding-top: 7em; */
 `;
 
 const SectionText = styled.p`
@@ -112,7 +112,8 @@ export default () => (
         <ButtonWhiteBorder href="mailto:">chci masooo</ButtonWhiteBorder>
       </Container>
     </RedBackground>
-    <Row noGutters>
+
+    <Row noGutters className="align-items-center">
       <Col md={6}>
         <Image src={Louchov1} fluid />
       </Col>
@@ -124,7 +125,8 @@ export default () => (
         </TextSection>
       </Col>
     </Row>
-    <Row noGutters>
+
+    <Row noGutters  className="align-items-center">
       <Col md={6} sm={12} className="text-sm-left text-md-right" noGutters>
         <TextSection header="Kde je kráva krávou" >
           Věříme, že naše krávy jsou vybaveny vším co potřebují k tomu, aby byly úspěšnými krávami. Snažíme se jim život komplikovat co nejméně.<br /><br />
@@ -136,6 +138,7 @@ export default () => (
         <Image src={Louchov2} fluid />
       </Col>
     </Row>
+
     <DarkGreenBackground>
       <Container className="text-center">
         <GreenHeader>Inovativní pastva</GreenHeader>
@@ -145,7 +148,8 @@ export default () => (
         </GreenText>
       </Container>
     </DarkGreenBackground>
-    <Row noGutters>
+
+    <Row noGutters className="align-items-center">
       <Col md={6} sm={12}>
         <Image src={Louchov3} fluid />
       </Col>
@@ -157,7 +161,8 @@ export default () => (
         </TextSection>
       </Col>
     </Row>
-    <Row noGutters>
+
+    <Row noGutters className="align-items-center">
       <Col md={6} sm={12} className="text-sm-left text-md-right">
         <TextSection header="Udržitelnost" >
           Sedláci odjakživa tvořili základ ekonomického a společenského života ve svých obcích.<br /><br />
