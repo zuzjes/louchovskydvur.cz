@@ -2,14 +2,13 @@ import React from "react"
 
 import styled from "styled-components";
 import { Container, Image, Row, Col } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
 import LouchovLogo from "../assets/louchov_logo.svg";
 import Louchov1 from "../assets/louchov1.jpeg";
 import Louchov2 from "../assets/louchov2.jpeg";
 import Louchov3 from "../assets/louchov3.png";
 import Louchov4 from "../assets/louchov4.jpeg";
-import H3red from "../components/H3red"
-
+import H3red from "../components/H3red";
+import TextRed from "../components/TextRed";
 
 const A = styled.a`
   color: #D24423;
@@ -31,10 +30,6 @@ const Header = styled.h1`
   padding: 1em 0 0.3em 0;
   color: white;
   text-align: center;
-`;
-
-const SectionText = styled.p`
-  color: #D24423;
 `;
 
 const RedBackground = styled.div`
@@ -89,9 +84,9 @@ const TextSection = props => (
   <>
     <Container>
       <H3red>{props.header}</H3red>
-      <SectionText>
+      <TextRed>
         {props.children}
-      </SectionText>
+      </TextRed>
       <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
     </Container>
   </>
@@ -104,9 +99,9 @@ const TextWithImageLeft = props => (
     <Col md={6}>
       <Container>
         <H3red>{props.header}</H3red>
-        <SectionText>
+        <TextRed>
           {props.children}
-        </SectionText>
+        </TextRed>
         {!props.noButton &&
           <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>}
       </Container>
@@ -118,9 +113,9 @@ const TextWithImageRight = props => (
     <Col md={6} className="text-sm-left text-md-right">
       <Container>
         <H3red>{props.header}</H3red>
-        <SectionText>
+        <TextRed>
           {props.children}
-        </SectionText>
+        </TextRed>
         <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
       </Container>
     </Col>
@@ -160,7 +155,7 @@ export default () => (
         </GreenText>
       </Container>
     </DarkGreenBackground>
-    
+
     <TextWithImageLeft noButton header="Návrat vlků do Krušných hor" src={Louchov3}>
       Neboj se vlka nic. Ikdyž je za humny, doslova.<br /><br />
       Výskyt vlků na hranici Louchovského dvora se potvrdil dva týdny po převzetí hospodářstí. Každé jaro páchá zvěř na našich pastvinách ohromné škody. Pokud budou vlci likvidovat přemnoženou zvěř, budeme spolu vycházet.<br /><br />
@@ -170,7 +165,7 @@ export default () => (
       Sedláci odjakživa tvořili základ ekonomického a společenského života ve svých obcích.<br /><br />
       Zvláště v Sudetech se tento přesah vytrácí a z půdy se často stává prostředek pro čerpání dotací.<br /><br />
       Domašín (pod který Louchov spadá) je zrovna příkladem obce, která své pozemky pronajímá řetězci firem končících v daňových rájích a osobám dlouhodbě obviněným z krácení daní.<br /><br />
-      Proti těmto praktikách – zatím neúspěšně – bojujeme.  
+      Proti těmto praktikách – zatím neúspěšně – bojujeme.
     </TextWithImageRight>
   </>
 );

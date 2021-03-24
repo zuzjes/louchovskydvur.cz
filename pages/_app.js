@@ -6,6 +6,7 @@ import { Nav, Navbar, Row, Col } from "react-bootstrap"
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import H3red from "../components/H3red"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -60,7 +61,7 @@ class MyApp extends App {
           <Row>
             <Col md={6} sm={12}>
               <SectionText>
-                Jak nakoupit / <A href="/">Obchodní podmínky</A> / <A href="/">Ochrana osobních údajů</A>
+                Jak nakoupit / <A href="/obchodni-podminky">Obchodní podmínky</A> / <A href="/">Ochrana osobních údajů</A>
               </SectionText>
             </Col>
             <Col md={6} sm={12}>
