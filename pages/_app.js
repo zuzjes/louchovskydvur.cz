@@ -61,7 +61,7 @@ class MyApp extends App {
           <Row>
             <Col md={6} sm={12}>
               <SectionText>
-                Jak nakoupit / <A href="/obchodni-podminky">Obchodní podmínky</A> / <A href="/">Ochrana osobních údajů</A>
+                Jak nakoupit / <A href="/obchodni-podminky">Obchodní podmínky</A> / <A href="/ochrana-osobnich-udaju">Ochrana osobních údajů</A>
               </SectionText>
             </Col>
             <Col md={6} sm={12}>

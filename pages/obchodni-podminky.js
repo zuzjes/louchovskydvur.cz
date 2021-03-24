@@ -1,12 +1,17 @@
 import React from "react"
-import { Container, Image, Row, Col } from "react-bootstrap"
-import H3red from "../components/H3red";
+import { Container } from "react-bootstrap"
+import styled from "styled-components";
 import TextRed from "../components/TextRed";
 
+const Header = styled.h3`
+    font-size: 1.4em;
+    color: #D24423;
+    padding: 1em 0;
+`;
 
 const obchodniPodminky = () => (
     <Container>
-        <H3red>Obchodní podmínky</H3red>
+        <Header>Obchodní podmínky</Header>
         <TextRed>
             fyzické osoby podnikající Erik Rudický<br /><br /><br />
             se sídlem: Spojovací 190/15, Praha 9, 19000<br /><br />
