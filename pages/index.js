@@ -47,7 +47,12 @@ const GreenHeader = styled.h3`
 const GreenText = styled.p`
   color: #A0D2B1;
 `;
-
+const ContainerRight = styled(Container)`
+  padding-right: 38px!important;
+`;
+const ContainerLeft = styled(Container)`
+  padding-left: 38px!important;
+`;
 const ButtonWhiteBorder = styled.a`
   border: 1px solid white;
   font-size: 14px;
@@ -80,44 +85,33 @@ const ButtonRedBorder = styled.a`
   }
 `;
 
-const TextSection = props => (
-  <>
-    <Container>
-      <H3red>{props.header}</H3red>
-      <TextRed>
-        {props.children}
-      </TextRed>
-      <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
-    </Container>
-  </>
-)
 const TextWithImageLeft = props => (
   <Row noGutters className="align-items-center">
     <Col md={6}>
       <Image src={props.src} fluid />
     </Col>
     <Col md={6}>
-      <Container>
+      <ContainerLeft>
         <H3red>{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
         {!props.noButton &&
           <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>}
-      </Container>
+      </ContainerLeft>
     </Col>
   </Row>
 )
 const TextWithImageRight = props => (
   <Row noGutters className="align-items-center">
     <Col md={6} className="text-sm-left text-md-right">
-      <Container>
+      <ContainerRight>
         <H3red>{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
         <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
-      </Container>
+      </ContainerRight>
     </Col>
     <Col md={6}>
       <Image src={props.src} fluid />
@@ -160,6 +154,7 @@ export default () => (
       Neboj se vlka nic. Ikdyž je za humny, doslova.<br /><br />
       Výskyt vlků na hranici Louchovského dvora se potvrdil dva týdny po převzetí hospodářstí. Každé jaro páchá zvěř na našich pastvinách ohromné škody. Pokud budou vlci likvidovat přemnoženou zvěř, budeme spolu vycházet.<br /><br />
       Nevěřím ve schopnost člověka zachovat v přírodě rovnováhu, návrat vlka je symbolem ozdravování krušnohorské přírody.<br /><br />
+      <ButtonRedBorder href="/o-vlcich-a-lidech">chci vlkaaa</ButtonRedBorder>
     </TextWithImageLeft>
     <TextWithImageRight header="Udržitelnost" src={Louchov4} >
       Sedláci odjakživa tvořili základ ekonomického a společenského života ve svých obcích.<br /><br />

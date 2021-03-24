@@ -9,8 +9,12 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    /* font-size: 1em; */
-    /* font-family: "Work Sans", sans-serif; */
+    p, a, li {
+      font-family: "Work Sans",sans-serif;
+      line-height: 1.6em;
+      font-weight: 400;
+      font-size: .88rem;
+    }
   }
 `;
 const FooterHeader = styled.h3`
@@ -47,7 +51,7 @@ class MyApp extends App {
         <Head>
           <title>Louchovský dvůr</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
         </Head>
         <Navbar className="pt-3 pb-3">
           <A href="/">Louchovský dvůr</A>
