@@ -49,6 +49,7 @@ const GreenText = styled.p`
 `;
 const ContainerRight = styled(Container)`
   padding-right: 38px!important;
+  
 `;
 const ContainerLeft = styled(Container)`
   padding-left: 38px!important;
@@ -92,7 +93,7 @@ const TextWithImageLeft = props => (
     </Col>
     <Col md={6}>
       <ContainerLeft>
-        <H3red>{props.header}</H3red>
+        <H3red className="pt-4 pt-sm-0">{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
@@ -106,7 +107,7 @@ const TextWithImageRight = props => (
   <Row noGutters className="align-items-center">
     <Col md={6} className="text-sm-left text-md-right">
       <ContainerRight>
-        <H3red>{props.header}</H3red>
+        <H3red className="pt-4 pt-sm-0">{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
@@ -123,7 +124,9 @@ export default () => (
   <>
     <RedBackground>
       <Container className="text-center pb-5" >
-        <LouchovImg src={LouchovLogo} />
+        <span className="d-none d-sm-block">
+          <LouchovImg src={LouchovLogo} />
+        </span>
         <Header>"Kde je kráva krávou"</Header>
         <ButtonWhiteBorder href="mailto:">chci masooo</ButtonWhiteBorder>
       </Container>

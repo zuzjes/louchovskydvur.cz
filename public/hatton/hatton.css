@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Hatton';
+    src: url('Hatton-Bold.eot');
+    src: url('Hatton-Bold.eot') format('embedded-opentype'), url('Hatton-Bold.woff2') format('woff2'), url('Hatton-Bold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}

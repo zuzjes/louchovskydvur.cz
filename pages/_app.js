@@ -15,16 +15,29 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 400;
       font-size: .88rem;
     }
+    h3, h1 {
+      font-family: Hatton;
+    }
   }
 `;
 const FooterHeader = styled.h3`
   font-size: 3em;
   color: #D24423;
   padding-bottom: 0.5em;
+  font-family: Hatton;
 `;
 
 const A = styled.a`
   color: #D24423;
+  font-weight: bold;
+  cursor: pointer;
+  :hover {
+    color: #D24423;
+  }
+`;
+const NavLink = styled.a`
+  color: #D24423;
+  font-size: .88rem;
   font-weight: bold;
   cursor: pointer;
   :hover {
@@ -51,12 +64,14 @@ class MyApp extends App {
         <Head>
           <title>Louchovský dvůr</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link href="/hatton/hatton.css" rel="stylesheet" />
+
           <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
         </Head>
-        <Navbar className="pt-3 pb-3">
-          <A href="/">Louchovský dvůr</A>
+        <Navbar className="pt-3 pb-4">
+          <NavLink href="/">Louchovský dvůr</NavLink>
           <Nav className="ml-auto">
-            <A href="#contact">Kontakt</A>
+            <NavLink href="#contact">Kontakt</NavLink>
           </Nav>
         </Navbar>
         <Component {...pageProps} />
