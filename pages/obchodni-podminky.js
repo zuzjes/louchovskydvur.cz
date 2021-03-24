@@ -5,6 +5,7 @@ import TextRed from "../components/TextRed";
 
 const Header = styled.h3`
     font-size: 1.4em;
+    font-weight: bold;
     color: #D24423;
     padding: 1em 0;
 `;
