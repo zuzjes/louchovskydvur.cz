@@ -37,7 +37,7 @@ const ochranaOsobnichUdaju = () => (
 
                 <li>Správce nemá osobu tzv. pověřence. Správce lze kontaktovat na emailové adrese hi@louchovskydvur.cz.</li><br /><br />
 
-                <li>Správce osobních údajů, jakožto provozovatel webové stránky www.louchovskydvur.cz, užívá na této webové stránce soubory cookies, které jsou zde užity za účelem:</li><br /><br />
+                <li>Správce osobních údajů, jakožto provozovatel webové stránky www.louchovskydvur.cz, užívá na této webové stránce soubory cookies, které jsou zde užity za účelem:</li><br />
                 <p>měření návštěvnosti webových stránek a vytváření statistik týkající se návštěvnosti a chování návštěvníků na webových stránkách;
                     základní funkčnosti webových stránek.</p>
                 <ul>

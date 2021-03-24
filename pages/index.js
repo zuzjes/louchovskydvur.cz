@@ -23,6 +23,11 @@ const LouchovImg = styled.img`
     margin-top: -3%;
     margin-left: 24em;
     margin-right: 24em;
+    @media (max-width: 844px) {
+      display: none;
+      margin-left: 0;
+      margin-right: 0;
+  }
 `;
 
 const Header = styled.h1`
@@ -49,10 +54,15 @@ const GreenText = styled.p`
 `;
 const ContainerRight = styled(Container)`
   padding-right: 38px!important;
-  
+  @media (max-width: 844px) {
+    padding-right: 15px!important;
+  }
 `;
 const ContainerLeft = styled(Container)`
   padding-left: 38px!important;
+  @media (max-width: 844px) {
+    padding-left: 15px!important;
+  }
 `;
 const ButtonWhiteBorder = styled.a`
   border: 1px solid white;
@@ -91,9 +101,9 @@ const TextWithImageLeft = props => (
     <Col md={6}>
       <Image src={props.src} fluid />
     </Col>
-    <Col md={6}>
+    <Col md={6} className="pb-4 pb-md-0">
       <ContainerLeft>
-        <H3red className="pt-4 pt-sm-0">{props.header}</H3red>
+        <H3red className="pt-5 pt-md-0">{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
@@ -105,9 +115,9 @@ const TextWithImageLeft = props => (
 )
 const TextWithImageRight = props => (
   <Row noGutters className="align-items-center">
-    <Col md={6} className="text-sm-left text-md-right">
+    <Col md={6} className="text-sm-left text-md-right pb-4 pb-md-0">
       <ContainerRight>
-        <H3red className="pt-4 pt-sm-0">{props.header}</H3red>
+        <H3red className="pt-4 pt-md-0">{props.header}</H3red>
         <TextRed>
           {props.children}
         </TextRed>
@@ -115,7 +125,8 @@ const TextWithImageRight = props => (
       </ContainerRight>
     </Col>
     <Col md={6}>
-      <Image src={props.src} fluid />
+      <div>
+        <Image src={props.src} fluid /></div>
     </Col>
   </Row>
 )
