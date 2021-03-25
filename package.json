@@ -1,5 +1,5 @@
 {
-  "name": "zuzjes",
+  "name": "louchovskydvur.cz",
   "version": "0.0.0",
   "description": "Personal website of Zuzana Jeschke",
   "repository": "git@github.com:zuzjes/zuzjes.com.git",
@@ -13,7 +13,7 @@
     "bootstrap": "^4.6.0",
     "next": "^9.3.2",
     "next-images": "^1.1.2",
-    "now": "^16.3.1",
+    "now": "^21.0.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^16.9.0",

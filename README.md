@@ -1,4 +1,4 @@
-# zuzjes.com
+# louchovskydvur.cz
 
 ### Run in Development Mode
 - Clone repository
