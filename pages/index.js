@@ -19,14 +19,14 @@ const A = styled.a`
 `;
 
 const LouchovImg = styled.img`
-    position: relative;
-    margin-top: -3%;
-    margin-left: 24em;
-    margin-right: 24em;
-    @media (max-width: 844px) {
-      display: none;
-      margin-left: 0;
-      margin-right: 0;
+  position: relative;
+  margin-top: -3%;
+  margin-left: 24em;
+  margin-right: 24em;
+  @media (max-width: 844px) {
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 `;
 
@@ -124,9 +124,8 @@ const TextWithImageRight = props => (
         <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masoooo</ButtonRedBorder>
       </ContainerRight>
     </Col>
-    <Col md={6}>
-      <div>
-        <Image src={props.src} fluid /></div>
+    <Col md={6} className="text-sm-left text-md-right">
+        <Image src={props.src} fluid />
     </Col>
   </Row>
 )
@@ -148,9 +147,8 @@ export default () => (
       Na naše volky a jalovičky nespěcháme, každý kus dostává čas přirozeně a pomalu vyrůst na pastvinách. Právě to má zásadní vliv na chuť námi nabízeného masa.<br /><br />
       Dobytek nezavíráme, zbytečně nepřevážíme, neočkujeme, nestresujeme. Většina našich zvířat stráví celý život na dohled kostela svatého Jakuba.
     </TextWithImageLeft>
-    <TextWithImageRight header="Jaké je naše maso?" src={Louchov2} >
+    <TextWithImageRight header="Kde je kráva krávou" src={Louchov2} >
       Věříme, že naše krávy jsou vybaveny vším co potřebují k tomu, aby byly úspěšnými krávami. Snažíme se jim život komplikovat co nejméně.<br /><br />
-      Základem našeho stáda jsou huňaté krávy Salers z francouzské Normandie a Cantalu. Jsou známy pro své mateřské pudy a ostré rohy, ideální kombinací do vlčí oblasti v horách.<br /><br />
       Šlechtění bezrohých zvířat nepodporujeme. Ulehčuje sice práci člověku, ale zbavuje dobytek jeho přirozenosti a bere mu jeho základní sebeobranný nástroj.
     </TextWithImageRight>
 
