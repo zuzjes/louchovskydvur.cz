@@ -65,8 +65,8 @@ class MyApp extends App {
         <Head>
           <title>Louchovský dvůr</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
           <link href="/hatton/hatton.css" rel="stylesheet" />
-
           <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
         </Head>
         <Navbar className="pt-3 pb-4">
