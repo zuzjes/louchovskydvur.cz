@@ -2,7 +2,7 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
-import { Nav, Navbar, Row, Col, Container } from "react-bootstrap"
+import { Nav, Navbar, Row, Col, Container } from "react-bootstrap";
 import Gauges from "../components/Gauges";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 const FooterHeader = styled.h3`
-  font-size: 3em;
+  font-size: 2em;
   color: #D24423;
   padding-bottom: 0.5em;
   font-family: Hatton;
@@ -72,7 +72,7 @@ class MyApp extends App {
         <Navbar className="pt-3 pb-4">
           <NavLink href="/">Louchovský dvůr</NavLink>
           <Nav className="ml-auto">
-            <NavLink href="#kontakt">kontakt</NavLink>
+            <NavLink href="/erik-rudicky">kontakt</NavLink>
             <NavLink href="/e-shop">e-shop</NavLink>
           </Nav>
         </Navbar>
