@@ -39,6 +39,7 @@ const NavLink = styled.a`
   color: #D24423;
   font-size: .88rem;
   font-weight: bold;
+  padding: 0 1.5em 0 2em;
   cursor: pointer;
   :hover {
     color: #D24423;
@@ -71,13 +72,14 @@ class MyApp extends App {
         <Navbar className="pt-3 pb-4">
           <NavLink href="/">Louchovský dvůr</NavLink>
           <Nav className="ml-auto">
-            <NavLink href="#contact">Kontakt</NavLink>
+            <NavLink href="#kontakt">kontakt</NavLink>
+            <NavLink href="/e-shop">e-shop</NavLink>
           </Nav>
         </Navbar>
         <Component {...pageProps} />
         <LightGreenBackground>
           <Container>
-            <FooterHeader className="text-center">Erik Rudický</FooterHeader>
+            <FooterHeader id="kontakt" className="text-center">Erik Rudický</FooterHeader>
             <SectionText className="text-center">
               Louchov<br />
               <A href="tel:+420775159372">+420 775 159 372<br /></A>
