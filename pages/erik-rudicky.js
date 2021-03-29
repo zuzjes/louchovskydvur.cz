@@ -24,7 +24,7 @@ const A = styled.a`
 
 const ErikRudicky = () => (
     <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center pb-5">
             <Col md={6}>
                 <Image src={erik_image} fluid className="p-5 mb-5" />
             </Col>

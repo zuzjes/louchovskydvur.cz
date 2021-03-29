@@ -26,9 +26,28 @@ const ButtonRedBorder = styled.a`
     color: white;
   }
 `;
+const CardLouchov = styled(Card)`
+    width: 30%; 
+    border-color: #D24423; 
+    border-radius: 0;
+    @media (max-width: 1025px) {
+        width: 50%;
+        text-align: left;
+
+    }
+    @media (max-width: 850px) {
+        width: 60%;
+        text-align: -webkit-center;
+
+    }
+    @media (max-width: 650px) {
+        width: 100%;
+        text-align: -webkit-center;
+    }
+`;
 const Eshop = () => (
-    <Container>
-        <Card style={{ width: '18rem', borderColor: "#D24423", borderRadius: "0" }} className="mb-5">
+    <Container className="pb-5">
+        <CardLouchov className="mb-5">
             <Card.Img variant="top" src={louchovske_maso} fluid />
             <Card.Body>
                 <Header>Louchovský balík masa 10 kg</Header>
@@ -38,7 +57,7 @@ const Eshop = () => (
                 </TextRed>
                 <ButtonRedBorder href="mailto:hi@louchovskydvur.cz">chci masooo</ButtonRedBorder>
             </Card.Body>
-        </Card>
+        </CardLouchov>
     </Container>
 );
 export default Eshop;

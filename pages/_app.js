@@ -44,6 +44,10 @@ const NavLink = styled.a`
   :hover {
     color: #D24423;
   }
+  @media (max-width: 519px) {
+    font-size: .8rem!important;
+    padding: 0 1em 0 1em!important;
+  }
 `;
 
 const SectionText = styled.p`
