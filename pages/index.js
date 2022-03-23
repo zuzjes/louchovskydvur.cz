@@ -138,7 +138,7 @@ export default () => (
           <LouchovImg src={LouchovLogo} />
         </span>
         <Header>"Kde je kráva krávou"</Header>
-        <ButtonWhiteBorder href="mailto:">chci masooo</ButtonWhiteBorder>
+        <ButtonWhiteBorder href="mailto:hi@louchovskydvur.cz">chci masooo</ButtonWhiteBorder>
       </Container>
     </RedBackground>
 
